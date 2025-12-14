@@ -72,7 +72,7 @@ function createOrderList() {
             let li = document.createElement('li');
             let span = document.createElement('span');
             li.innerText = `${food.name}`;
-            span.innerText = `${food.price}`;
+            span.innerText = `- $${food.price}`;
             li.appendChild(span);
             ulFood.appendChild(li);
         });
