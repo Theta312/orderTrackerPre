@@ -1,0 +1,90 @@
+
+
+
+#food-group {
+    max-height: 40vh;
+    overflow: scroll
+}
+
+.meal-order  {
+    cursor: pointer;
+    position: relative;
+}
+
+.meal-order.checkMark::before {
+    content: '';
+    background-image: url(./images/orderconfirmed.gif);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    right: 80px
+}
+
+.meal-order.cooking::before {
+    content: '';
+    background-image: url(./images/cook.gif);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    right: 80px;
+    
+}
+
+.meal-order.handedOver::before {
+     content: '';
+    background-image: url(./images/orderHandedOver.gif);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    right: 80px;
+}
+
+.meal-order.onTheWay::before {
+    content: '';
+    background-image: url(./images/orderOnTheWay.gif);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    right: 80px;
+}
+
+.meal-order.destination::before {
+    content: '';
+    background-image: url(./images/orderReachDestination.gif);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    right: 80px;
+}
+
+.meal-order.delivered::before {
+    content: '';
+    background-image: url(./images/orderDelivered.gif);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    right: 80px;
+}
+
+.meal-order.prepared::before {
+    content: '';
+    background-image: url(./images/orderPrepared.gif);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    right: 80px;
+}

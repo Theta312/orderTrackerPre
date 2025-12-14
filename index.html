@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking app</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1 class="text-center">Welcome!</h1>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col-12">
+                    <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+                            href="#list-home" role="tab" aria-controls="list-home">Menu</a>
+                        <a class="list-group-item list-group-item-action" id="list-order-list" data-bs-toggle="list"
+                            href="#list-orders" role="tab" aria-controls="list-orders">Order history</a>
+
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            <section class="container-list">
+                                <ul>
+                                    <li class="food-item" data-name="pizza" data-price="10.00">
+                                        <span class="mealName">Pizza</span>
+                                        <span class="mealPrice">$10.00</span>
+                                        <button class="mealBtn" type="button">Add Food</button>
+                                    </li>
+                                    <li class="food-item" data-name="Cheeseburger" data-price="8.00">
+                                        <span class="mealName">Cheeseburger</span>
+                                        <span class="mealPrice">$8.00</span>
+                                        <button class="mealBtn" type="button">Add Food</button>
+                                    </li>
+                                    <li class="food-item" data-name="Ramen" data-price="6.00">
+                                        <span class="mealName">Ramen</span>
+                                        <span class="mealPrice">$6.00</span>
+                                        <button class="mealBtn" type="button">Add Food</button>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2 class="totalMeal"></h2>
+                                <ul class="order"></ul>
+                            </section>
+                            <section>
+                                <button type="button" class="addOrder">Add Order</button>
+                            </section>
+                        </div>
+                        <div class="tab-pane fade" id="list-orders" role="tabpanel" aria-labelledby="list-orders-list">
+                            <h2>Your Orders:</h2>
+                            <div class="" id="food-group">
+                              
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script  src="./script.js" async type="module" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
